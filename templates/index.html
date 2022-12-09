@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ayush Mali</title>
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            href="{{url_for('static',filename='favicon.png')}}"
+            type="image/x-icon"
+        />
+
+        <!-- Normalize CSS -->
+        <link
+            rel="stylesheet"
+            href="{{url_for('static',filename='normalize.css')}}"
+        />
+
+        <!-- Main CSS -->
+        <link
+            rel="stylesheet"
+            href="{{url_for('static',filename='main.css')}}"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+    </head>
+
+    <body>
+        <div class="nav">
+            <input type="checkbox" id="nav-check" />
+            <div class="nav-header">
+                <div class="nav-title"><a href="/">Ayush Mali</a></div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-links">
+                <a href="#projects">
+                    <li>Projects</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#skills">
+                    <li>Skills</li>
+                </a>
+
+                <a href="#Contact">
+                    <li>Contact</li>
+                </a>
+            </div>
+        </div>
+
+        <div style="padding-left: 16px"></div>
+
+        <center id="portfolio">
+            <div class="stagger-visualizer"></div>
+        </center>
+
+        <center id="about">
+            <div class="home-body">
+                <div class="spacer1"></div>
+
+                <h4
+                    style="
+                        letter-spacing: 3px;
+                        margin-bottom: 40px;
+                        font-size: 40px;
+                    "
+                >
+                    About Me
+                </h4>
+
+                <p>
+                    <b>
+                        Hello I'm Ayush Mali. I'm a programmer who likes to
+                        solve problems.
+                    </b>
+                </p>
+            </div>
+        </center>
+
+        <center id="projects">
+            <div class="spacer1"></div>
+
+            <h4
+                style="
+                    letter-spacing: 3px;
+                    margin-bottom: 40px;
+                    font-size: 40px;
+                "
+            >
+                My Projects
+            </h4>
+
+            <div class="main">
+                <ul class="cards">
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image">
+                                <img
+                                    src="{{url_for('static',filename='1.png')}}"
+                                />
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">Youtube Clone</h2>
+                                <p class="card_text">
+                                    A video sharing and streaming app like
+                                    youtube. Implemented many popular features
+                                    of youtube.Used MERN stack.
+                                </p>
+                                <a
+                                    href="https://github.com/glowfi/video-app"
+                                    target="_blank"
+                                >
+                                    <button class="btn card_btn">
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image">
+                                <img
+                                    src="{{url_for('static',filename='2.png')}}"
+                                />
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">
+                                    Binary Search Tree vizualizer
+                                </h2>
+                                <p class="card_text">
+                                    Vizualize Binary Search Tree.Perform
+                                    operations like insert,delete node and yes
+                                    invert the tree.
+                                </p>
+                                <a
+                                    href="https://github.com/glowfi/bstViz"
+                                    target="_blank"
+                                >
+                                    <button class="btn card_btn">
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image">
+                                <img
+                                    src="{{url_for('static',filename='3.png')}}"
+                                />
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">xhibit</h2>
+                                <p class="card_text">
+                                    A linux cli utility to print many useful
+                                    information about the system like cpu,gpu
+                                    name,packages,kernel version,memory
+                                    installed and many more.
+                                </p>
+                                <a
+                                    href="https://github.com/glowfi/xhibit"
+                                    target="_blank"
+                                >
+                                    <button class="btn card_btn">
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image">
+                                <img
+                                    src="{{url_for('static',filename='4.png')}}"
+                                />
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">Reminder App</h2>
+                                <p class="card_text">
+                                    A reminder app written in Flask
+                                </p>
+                                <a
+                                    href="https://github.com/glowfi/reminder"
+                                    target="_blank"
+                                >
+                                    <button class="btn card_btn">
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image">
+                                <img
+                                    src="{{url_for('static',filename='5.png')}}"
+                                />
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">
+                                    PathFinding Visaulizer
+                                </h2>
+                                <p class="card_text">
+                                    A path finding visualizer for various path
+                                    finding algorithms and maze generating
+                                    algorithms
+                                </p>
+                                <a
+                                    href="https://github.com/glowfi/pathviz"
+                                    target="_blank"
+                                >
+                                    <button class="btn card_btn">
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </center>
+
+        <center id="skills">
+            <div class="home-body">
+                <div class="spacer1"></div>
+
+                <h4
+                    style="
+                        letter-spacing: 3px;
+                        margin-bottom: 40px;
+                        font-size: 40px;
+                    "
+                >
+                    Skills
+                </h4>
+
+                <div class="sk">
+                    <i class="fa-brands fa-python iconSize"> Python</i>
+                    <div class="skills python">95%</div>
+                    <br />
+
+                    <i class="fa-light fa-dollar-sign iconSize"> Shell</i>
+                    <div class="skills sh">85%</div>
+                    <br />
+
+                    <i class="fa-brands fa-html5 iconSize"> HTML</i>
+                    <span class="skills html">90%</span>
+                    <br />
+
+                    <i class="fa-brands fa-css3 iconSize"> CSS</i>
+                    <div class="skills css">80%</div>
+                    <br />
+
+                    <i class="fa-brands fa-node-js iconSize"> NodeJS</i>
+                    <div class="skills node">80%</div>
+                    <br />
+
+                    <i class="fa-brands fa-react iconSize"> ReactJS</i>
+                    <div class="skills react">80%</div>
+                    <br />
+
+                    <i class="fa-solid fa-database iconSize"> SQL</i>
+                    <div class="skills sql">75%</div>
+                    <br />
+
+                    <i class="fa-light fa-c iconSize">++</i>
+                    <div class="skills js">65%</div>
+                    <br />
+                </div>
+            </div>
+        </center>
+
+        <center id="Contact">
+            <div class="home-body">
+                <div class="spacer1"></div>
+
+                <h4
+                    style="
+                        letter-spacing: 3px;
+                        margin-bottom: 40px;
+                        font-size: 40px;
+                    "
+                >
+                    Contact Me
+                </h4>
+
+                <form class="form" action="/" method="post">
+                    <h5>Send Me a message</h5>
+                    <div class="form-row">
+                        <label for="name" class="form-label">Name</label>
+                        <input
+                            type="text"
+                            placeholder="Your Name"
+                            id="name"
+                            name="name"
+                            class="form-input"
+                        />
+                    </div>
+                    <div class="form-row">
+                        <label for="email" class="form-label">Email</label>
+                        <input
+                            type="email"
+                            placeholder="Your Email"
+                            id="email"
+                            name="email"
+                            class="form-input"
+                        />
+                    </div>
+                    <div class="form-row">
+                        <label for="textarea" class="form-label">Message</label>
+                        <textarea
+                            class="form-textarea"
+                            id="message"
+                            name="message"
+                        >
+                        </textarea>
+                    </div>
+                    <button type="submit" class="btn btn-block">submit</button>
+                </form>
+            </div>
+        </center>
+
+        <footer class="footer">
+            <h4 style="margin: auto; text-align: center">Connect with me at</h4>
+            <div class="wrapper">
+                <a
+                    href="https://www.linkedin.com/in/ayush-mali-155245247/"
+                    target="_blank"
+                >
+                    <div class="social">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </a>
+                <a href="https://github.com/glowfi" target="_blank">
+                    <div class="social">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </a>
+
+                <div class="spacer2"></div>
+                <div
+                    style="
+                        margin: auto;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    "
+                ></div>
+            </div>
+            <p style="text-align: center; margin: auto; font-size: 1.1rem">
+                Designed and Developed by Ayush Mali 🄯 Copyleft 2022
+            </p>
+        </footer>
+    </body>
+    <script src="{{url_for('static',filename='anime.min.js')}}"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById('myTopnav');
+            if (x.className === 'topnav') {
+                x.className += ' responsive';
+            } else {
+                x.className = 'topnav';
+            }
+        }
+
+        const staggerVisualizerEl = document.querySelector(
+            '.stagger-visualizer'
+        );
+        const fragment = document.createDocumentFragment();
+        const numberOfElements = 81;
+
+        for (let i = 0; i < numberOfElements; i++) {
+            fragment.appendChild(document.createElement('div'));
+        }
+
+        staggerVisualizerEl.appendChild(fragment);
+
+        const staggersAnimation = anime
+            .timeline({
+                targets: '.stagger-visualizer div',
+                easing: 'easeInOutSine',
+                delay: anime.stagger(50),
+                loop: true,
+                autoplay: false,
+                duration: 600,
+                loopComplete: (a) => console.log('end')
+                //update: () => console.log(staggersAnimation.progress)
+            })
+            .add({
+                scale: anime.stagger([2.5, 1], {
+                    from: 'center',
+                    grid: [9, 9]
+                }),
+                translateX: anime.stagger([-100, 100]),
+                rotate: anime.stagger([-45, 45]),
+                easing: 'easeInOutCirc',
+                delay: anime.stagger(10, { from: 'center' })
+            })
+            .add({
+                scale: anime.stagger([2.5, 1], {
+                    from: 'center',
+                    easing: 'easeInOutCirc'
+                }),
+                translateX: anime.stagger([-200, 200]),
+                translateY: anime.stagger([-200, 200]),
+                rotate: 0,
+                delay: anime.stagger(1, { from: 'last' })
+            })
+            .add({
+                rotate: anime.stagger(2, {
+                    from: 'center',
+                    direction: 'reverse',
+                    easing: 'easeInSine'
+                }),
+                translateX: 0,
+                translateY: 0,
+                delay: anime.stagger(10, { from: 'center' })
+            })
+            .add({
+                scale: anime.stagger([2, 1], { grid: [9, 9], axis: 'y' }),
+                translateY: anime.stagger([-100, 200], {
+                    grid: [9, 9],
+                    axis: 'y'
+                }),
+                rotate: 0,
+                delay: anime.stagger(1, { from: 'last' })
+            })
+            .add({
+                translateX: () => anime.random(-100, 100),
+                translateY: () => anime.random(-100, 100),
+                scale: anime.stagger([1.5, 0.5], { from: 'center' }),
+                rotate: anime.stagger([10, -10], { from: 'last' }),
+                delay: anime.stagger(50, { from: 'center', grid: [9, 9] })
+            })
+            .add({
+                translateX: () => anime.random(-100, 100),
+                translateY: () => anime.random(-100, 100),
+                rotate: anime.stagger([-10, 10], { from: 'last' }),
+                scale: 1,
+                delay: anime.stagger(50, { from: 'center', grid: [9, 9] })
+            })
+            .add({
+                translateX: 0,
+                translateY: anime.stagger(6, {
+                    from: 'center',
+                    direction: 'reverse'
+                }),
+                rotate: 0,
+                delay: anime.stagger(50, { from: 'center', grid: [9, 9] })
+            })
+            .add({
+                translateX: anime.stagger('1rem', {
+                    grid: [9, 9],
+                    from: 'center',
+                    axis: 'x'
+                }),
+                //translateY: anime.stagger('1rem', {grid: [9, 9], from: 'center', axis: 'y'}),
+                delay: anime.stagger(200, {
+                    grid: [9, 9],
+                    from: 'center',
+                    direction: 'reverse'
+                })
+            })
+            .add({
+                translateX: anime.stagger([25, -25], { from: 'first' }),
+                translateY: 0,
+                rotate: anime.stagger([40, -40], { from: 'first' }),
+                delay: anime.stagger(10, { from: 'first' })
+            })
+            .add({
+                translateY: anime.stagger([-240, 240]),
+                rotate: () => anime.random(-100, 100),
+                scale: anime.stagger([1, 3], { from: 'center' }),
+                delay: anime.stagger(10, { from: 0 })
+            })
+            .add({
+                translateX: 0,
+                translateY: 0,
+                scale: 1,
+                rotate: 360,
+                duration: 2000,
+                delay: 0
+            });
+
+        staggersAnimation.play();
+    </script>
+</html>

@@ -1,0 +1,503 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css?family=Karla:400|Spectral:400');
+
+/* Global Variables */
+:root {
+    /* Fonts */
+    --headingFont: 'Spectral', serif;
+    --bodyFont: 'Karla', sans-serif;
+    --smallTextSize: 0.8rem;
+
+    /* Colors */
+
+    /* primary */
+    --primary-100: #f7f9fe;
+    --primary-200: #eff4fc;
+    --primary-300: #e6eefb;
+    --primary-400: #dee9f9;
+    --primary-500: #d6e3f8;
+    --primary-600: #abb6c6;
+    --primary-700: #808895;
+    --primary-800: #565b63;
+    --primary-900: #2b2d32;
+
+    /* grey */
+    --grey-50: #f8fafc;
+    --grey-100: #f1f5f9;
+    --grey-200: #e2e8f0;
+    --grey-300: #cbd5e1;
+    --grey-400: #94a3b8;
+    --grey-500: #64748b;
+    --grey-600: #475569;
+    --grey-700: #334155;
+    --grey-800: #1e293b;
+    --grey-900: #0f172a;
+
+    /* Others */
+    --black: #222;
+    --white: #fff;
+    --red-light: #f8d7da;
+    --red-dark: #842029;
+    --green-light: #d1e7dd;
+    --green-dark: #0f5132;
+    --background-color: var(--grey-200);
+    --textColor: var(--grey-900);
+    --max-width: 1120px;
+    --fixed-width: 600px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #f7f7f7;
+    font-family: var(--bodyFont);
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--textColor);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    max-width: 40em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    margin-bottom: 1.38rem;
+    font-family: var(--headingFont);
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+    color: var(--grey-100);
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+    color: var(--grey900);
+}
+
+h5 {
+    font-size: 1.25rem;
+    color: var(--grey900);
+}
+
+small,
+.text_small {
+    font-size: var(--smallTextSize);
+}
+
+.home-body {
+    width: 80%;
+}
+
+.spacer {
+    height: 1000px;
+}
+
+.spacer1 {
+    height: 140px;
+}
+
+.spacer2 {
+    height: 30px;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+.icon {
+    height: 200px;
+    width: 300px;
+}
+
+.wrapper {
+    padding: 25px 0 0;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    line-height: 50px;
+    font-family: brandico;
+    font-size: 28px;
+    text-align: center;
+    /* color: #000; */
+    border-radius: 10px;
+    background: #000;
+    overflow: hidden;
+    cursor: pointer;
+}
+.git {
+    background: black !important;
+}
+
+.social:hover {
+    opacity: 0.8;
+}
+
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+}
+
+.html {
+    width: 90%;
+}
+.css {
+    width: 80%;
+}
+.js {
+    width: 65%;
+}
+
+.sql {
+    width: 75%;
+}
+
+.python {
+    width: 95%;
+}
+
+.react {
+    width: 80%;
+}
+
+.sh {
+    width: 85%;
+}
+
+.node {
+    width: 80%;
+}
+
+.html,
+.css,
+.js,
+.python,
+.react,
+.sh,
+.node,
+.sql {
+    background-color: var(--black);
+}
+
+.sk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin-left: 5rem;
+}
+
+.iconSize {
+    font-size: 3rem;
+}
+
+/* form */
+
+.form {
+    width: 90vw;
+    max-width: var(--fixed-width);
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-2);
+    padding: 2rem 2.5rem;
+    margin: 3rem auto;
+}
+
+.form:hover {
+    box-shadow: var(--shadow-4);
+    transition: var(--trasnistion);
+}
+
+.form-label {
+    display: block;
+    font-size: var(--small-text);
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing);
+}
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    border-radius: var(--border-radius);
+    background: var(--backg-color);
+    border: 1px solid var(--grey-200);
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.form-textarea {
+    height: 7rem;
+}
+
+/* button */
+.btn {
+    cursor: pointer;
+    color: var(--white);
+    background: var(--grey-900);
+    border: transparent;
+    border-radius: var(--border-radius);
+    letter-spacing: var(--letter-spacing);
+    padding: 0.375rem 0.75rem;
+    box-shadow: var(--shadow-1);
+    transition: var(--trasnistion);
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--primary-700);
+    box-shadow: var(--shadow-4);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: var(--primary-900);
+    position: relative;
+    position: fixed;
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+    color: var(--primary-500);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,
+    .nav #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+img {
+    margin: 0.5rem;
+}
+
+a {
+    display: inline;
+    color: #fff;
+    /* font-size: 13px; */
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    padding: 1rem;
+    background: #2c2c2c;
+}
+
+.card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.stagger-visualizer {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+}
+
+.stagger-visualizer div {
+    /*position: absolute;*/
+    width: 64px;
+    height: 128px;
+    border: 1px solid #373535;
+    background-color: #f6f4f2;
+}
